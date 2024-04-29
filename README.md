@@ -1,12 +1,23 @@
-- 👋 Hi, I’m @mili100x
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
+package main
 
-<!---
-mili100x/mili100x is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+import "fmt"
+
+type Person struct {
+  name string
+  username string
+  age int
+  hobbies []string
+  job string
+}
+
+func main() {
+  var me = new(Person)
+  
+  me.name     = "X4JU"
+  me.username = "X4JU"
+  me.age      = "20"
+  me.job      = "AI developer | Web developer"
+  me.hobbies  = []string{"code", "anime", "music"," guiterist"," gaming"}
+  
+  fmt.Println(me)
+}
